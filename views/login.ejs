@@ -1,0 +1,21 @@
+<%- include('./base/header.ejs') %>
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="#">
+        <div class="inputBox">
+            <input type="text" required>
+            <span>Username</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="password" required>
+            <span>Password</span>
+            <i></i>
+        </div>
+        <button type="submit">Login</button>
+        <div class="signup-link">
+            <a href="/sign/up">Don't have an account? Sign up</a>
+        </div>
+    </form>
+</div>
+<%- include('./base/footer.ejs') %>
