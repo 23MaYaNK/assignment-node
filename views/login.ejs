@@ -1,17 +1,18 @@
 <%- include('./base/header.ejs') %>
 <div class="login-container">
     <h2>Login</h2>
-    <form action="#" method="get">
+    <form action="/login" method="post">
         <div class="inputBox">
-            <input type="text" required>
+            <input type="text" name="emailId" required>
             <span>Username</span>
             <i></i>
         </div>
         <div class="inputBox">
-            <input type="password" required>
+            <input type="password" name="password" required>
             <span>Password</span>
             <i></i>
         </div>
+        <!-- <input type="submit">Login</input> -->
         <button type="submit">Login</button>
         <div class="signup-link">
             <a href="/sign/up">Don't have an account? Sign up</a>

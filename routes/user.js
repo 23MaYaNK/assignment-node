@@ -7,8 +7,14 @@ router.use(express.urlencoded({extended:false}));
 router.get('/',(req,res)=>{
     res.render('login')                          
 })
-router.get('/login',(req,res)=>{
-    res.render('login')                           
+router.get('/admin/login',(req,res)=>{
+    res.render('welcomeadmin')                          
+})
+router.get('/login/nav',(req,res)=>{
+    res.render('login')                          
+})
+router.post('/login',(req,res)=>{
+    usercontrollers.dologin(req,res)                          
 })
 router.get('/sign/up',(req,res)=>{
     res.render('signup')                           
